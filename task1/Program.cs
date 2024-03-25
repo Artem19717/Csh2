@@ -1,13 +1,40 @@
 ﻿//Напиши программу,которая на вход принимает число и выдает,являится ли число четным 
 
-System.Console.WriteLine("введите число");
-int num = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("введите число");
+// int num = Convert.ToInt32(Console.ReadLine());
 
-if (num % 2 == 0)
-{
-    System.Console.WriteLine("Чутное");
-}
-else
-{
-    System.Console.WriteLine("не четное");
-}
+// if (num % 2 == 0)
+// {
+//     System.Console.WriteLine("Чутное");
+// }
+// else
+// {
+//     System.Console.WriteLine("не четное");
+// }
+//---------------------------------------------------------------------------------------------------------------
+//Написать прогамму которая на вход принимает число N а на выходе показывает все четные числа от 1 до N 
+
+System.Console.WriteLine("введите число: ");
+int N = Convert.ToInt32(Console.ReadLine());
+
+// int i = 1;
+// while (i <= N)
+// {
+//     if (i % 2 == 0)
+//     {
+//         System.Console.Write(i + " ");
+//     }
+//     i++; 
+// }
+
+//________________________________________________________________________________________________________
+// 2 й ВОРИАНТ ЗАДАЧИ:
+
+// for (int i = 1; i <= N; i++)
+//     if (i % 2 == 0)
+//         System.Console.Write(i + " ");
+
+//3 й ВАРИАНТ
+for(int i = 2; i <= N; i += 2 )
+System.Console.WriteLine(i + " ");
+
