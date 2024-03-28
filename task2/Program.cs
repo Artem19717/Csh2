@@ -48,21 +48,55 @@
 // }
 // ---------------------------------------------------------------------------------------------------------------------
 
- //Напишите программу, которая бедет принимать на вход два числа и выводить является ли первое число кратным второму 
- //Если первое число не кратно второму то программа выводит остаток от деленияю
+//Напишите программу, которая бедет принимать на вход два числа и выводить является ли первое число кратным второму 
+//Если первое число не кратно второму то программа выводит остаток от деленияю
 
-System.Console.WriteLine("Введите первое число");
-int firstNum = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("Введите первое число");
+// int firstNum = Convert.ToInt32(Console.ReadLine());
 
-System.Console.WriteLine("Введите второе число");
-int secondNum = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("Введите второе число");
+// int secondNum = Convert.ToInt32(Console.ReadLine());
 
-if (firstNum % secondNum == 0)
+// if (firstNum % secondNum == 0)
+// {
+//     System.Console.WriteLine("Да");
+// }
+// else
+// {
+//     System.Console.WriteLine("Нет," + firstNum % secondNum);
+
+// }
+
+//---------------------------------------------------------------------------------------------------------------
+
+//Напишите программу, которая выводит третью с конца цифру заданного числа или сообщает, что третьей цифры нет.
+
+// System.Console.WriteLine("Ведите число");
+// int num = Convert.ToInt32(Console.ReadLine());
+
+// if (num >  99 )
+// {
+//     System.Console.WriteLine(num % 1000 / 100);
+// }
+// else
+// {
+//     System.Console.WriteLine("Третьей цифры нет");
+// }
+
+//----------------------------------------------------------------------------------------------------------------------
+
+//Второй вариант решения задачи
+
+System.Console.WriteLine("Ведите число");
+int num = Convert.ToInt32(Console.ReadLine());
+
+if (num > 99)
 {
-    System.Console.WriteLine("Да");
+    while (num > 999)
+        num /= 10;
+    System.Console.WriteLine(num % 10);
 }
 else
 {
-    System.Console.WriteLine("Нет," + firstNum % secondNum);
-    
+    System.Console.WriteLine("Третьей цифры нет");
 }
