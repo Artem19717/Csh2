@@ -45,28 +45,65 @@
 //Задайте массив из 10 элементов заполненный из промежутка (-10, 10) Замените отрицательные элементы 
 //на положительные,а положительные на отрицательные
 
-System.Console.WriteLine("Введите размер массива");
-int arrSize = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("Введите размер массива");
+// int arrSize = Convert.ToInt32(Console.ReadLine());
 
-int[] myarr = new int[arrSize];
-Random rand = new Random();
+// int[] myarr = new int[arrSize];
+// Random rand = new Random();
 
-for (int i = 0; i < myarr.Length; i++)
-{
-    myarr[i] = rand.Next(-10, 11);
-}
+// for (int i = 0; i < myarr.Length; i++)
+// {
+//     myarr[i] = rand.Next(-10, 11);
+// }
 
-for (int i = 0; i < myarr.Length; i++)
-{
-    System.Console.Write(myarr[i] + "\t");
-}
+// for (int i = 0; i < myarr.Length; i++)
+// {
+//     System.Console.Write(myarr[i] + "\t");
+// }
 
-for (int i = 0; i < myarr.Length; i++)
-{
-    myarr[i] *= -1;
-}
-System.Console.WriteLine();
-for (int i = 0; i < myarr.Length; i++)
-{
-    System.Console.Write(myarr[i] + "\t");
-}
+// for (int i = 0; i < myarr.Length; i++)
+// {
+//     myarr[i] *= -1;
+// }
+// System.Console.WriteLine();
+// for (int i = 0; i < myarr.Length; i++)
+// {
+//     System.Console.Write(myarr[i] + "\t");
+// }
+
+//----------------------------------------------------------------------------------------------------------------------
+
+//Найти произведение пар чисел в одномерном массиве. Парой считаем первый и последний элемент,второй и предпоследний
+// и т.д. Результат запешите в новый массив
+
+
+// System.Console.WriteLine("Введите размер массива");
+// int arrSize = Convert.ToInt32(Console.ReadLine());
+
+// int[] myarr = new int[arrSize];
+// Random rand = new Random();
+
+// for (int i = 0; i < myarr.Length; i++)
+// {
+//     myarr[i] = rand.Next(-10, 11);
+// }
+
+// for (int i = 0; i < myarr.Length; i++)
+// {
+//     System.Console.Write(myarr[i] + " ");
+// }
+
+// int[] newarr = new int[myarr.Length / 2];
+
+// for(int i = 0; i < newarr.Length; i++)
+// {
+//     newarr[i] = myarr[i] * myarr [myarr.Length - 1 - i];
+// }
+// System.Console.WriteLine();
+
+// for(int i = 0; i < newarr.Length; i++)
+// {
+//     System.Console.Write(newarr[i] + " ");
+// }
+
+//-----------------------------------------------------------------------------------------------------------------------
