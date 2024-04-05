@@ -62,22 +62,22 @@
 //Напишите программу, которая на вход принимает натуральное число N, а на выходе показывает его цифры через запятую.
 
 
-System.Console.WriteLine("Введите натуральное число N:");
-string input = Console.ReadLine();
-if (int.TryParse(input, out int num) && num > 0)
-{
-    string numstring = num.ToString();
-    System.Console.Write(numstring[0]);
-    for (int i = 1; i < numstring.Length; i++)
-    {
-        System.Console.Write(", " + numstring[i]);
-    }
-    System.Console.WriteLine();
-}
-else
-{
-    System.Console.WriteLine("ошибка");
-}
+// System.Console.WriteLine("Введите натуральное число N:");
+// string input = Console.ReadLine();
+// if (int.TryParse(input, out int num) && num > 0)
+// {
+//     string numstring = num.ToString();
+//     System.Console.Write(numstring[0]);
+//     for (int i = 1; i < numstring.Length; i++)
+//     {
+//         System.Console.Write(", " + numstring[i]);
+//     }
+//     System.Console.WriteLine();
+// }
+// else
+// {
+//     System.Console.WriteLine("ошибка");
+// }
 
 
 
